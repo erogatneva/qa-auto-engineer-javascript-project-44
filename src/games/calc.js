@@ -1,9 +1,4 @@
-import {
-  getRandomInt,
-  getRandomOperator,
-  printCorrect,
-  printError,
-} from "../src/index.js";
+import { getRandomInt, printCorrect, printError } from "../index.js";
 
 import readlineSync from "readline-sync";
 
@@ -18,6 +13,12 @@ const generateQuestion = () => {
     operator: operator,
     question: question,
   };
+};
+
+const getRandomOperator = () => {
+  const operators = "+-*";
+  const operator = operators[getRandomInt(0, operators.length - 1)];
+  return operator;
 };
 
 const getAnswer = (firstOperand, secondOperand, operator) => {
@@ -36,8 +37,7 @@ const processAnswer = (userAnswer, expectedAnswer, name, correctAnswers) => {
     printCorrect();
     return correctAnswers + 1;
   } else {
-    printError(expectedAnswer, userAnswer, name);
-    return correctAnswers > 0 ? correctAnswers - 1 : 0;
+    return printError(expectedAnswer, userAnswer, name);
   }
 };
 
@@ -63,7 +63,7 @@ const calcGame = (name) => {
     );
   }
 
-  console.log(`Congratulations, ${name}!`);
+  correctAnswers === 3 ? console.log(`Congratulations, ${name}!`) : "";
 };
 
 export default calcGame;
