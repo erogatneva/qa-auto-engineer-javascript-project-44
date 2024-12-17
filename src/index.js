@@ -16,11 +16,6 @@ const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
 };
 
-const getRandomOperator = () => {
-  const operators = "+-*";
-  return operators[getRandomInt(0, operators.length - 1)];
-};
-
 const printCorrect = () => {
   console.log("Correct!");
 };
@@ -31,4 +26,4 @@ const printError = (expectedAnswer, userAnswer, name) => {
   );
 };
 
-export { getUserName, sayHello, getRandomInt, getRandomOperator, printCorrect, printError };
+export { getUserName, sayHello, getRandomInt, printCorrect, printError };
