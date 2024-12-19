@@ -8,7 +8,7 @@
 
 ### How to install Brain Even game:
 
-[![asciicast](https://asciinema.org/a/aNCfFsmavKBToSOvtaZhDBodX.svg)](https://asciinema.org/a/aNCfFsmavKBToSOvtaZhDBodX)
+<a href="https://asciinema.org/a/aNCfFsmavKBToSOvtaZhDBodX" target="_blank"><img src="https://asciinema.org/a/aNCfFsmavKBToSOvtaZhDBodX.svg" /></a>
 
 ### How to install Brain Calc game:
 
