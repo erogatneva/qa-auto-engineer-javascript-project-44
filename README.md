@@ -9,9 +9,11 @@
 ### How to install Brain Even game:
 
 <!-- [![asciicast](https://asciinema.org/a/aNCfFsmavKBToSOvtaZhDBodX.svg)](https://asciinema.org/a/aNCfFsmavKBToSOvtaZhDBodX) -->
+
 ![How to install Brain Even game](url)
 
 ### How to install Brain Calc game:
 
 <!-- [![asciicast](https://asciinema.org/a/kLfF3QRjeH2nx24dsD53P1OTB.svg)](https://asciinema.org/a/kLfF3QRjeH2nx24dsD53P1OTB) -->
+
 ![How to install Brain Calc game](url)
