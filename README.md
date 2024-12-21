@@ -8,12 +8,12 @@
 
 ### How to install Brain Even game:
 
-<!-- [![asciicast](https://asciinema.org/a/aNCfFsmavKBToSOvtaZhDBodX.svg)](https://asciinema.org/a/aNCfFsmavKBToSOvtaZhDBodX) -->
-
 ![How to install Brain Even game](https://github.com/erogatneva/qa-auto-engineer-javascript-project-44/blob/main/src/gifs/brain-even.gif)
 
 ### How to install Brain Calc game:
 
-<!-- [![asciicast](https://asciinema.org/a/kLfF3QRjeH2nx24dsD53P1OTB.svg)](https://asciinema.org/a/kLfF3QRjeH2nx24dsD53P1OTB) -->
-
 ![How to install Brain Calc game](https://github.com/erogatneva/qa-auto-engineer-javascript-project-44/blob/main/src/gifs/brain-calc.gif)
+
+### How to install Brain Calc game:
+
+![How to install Brain GCD game](https://github.com/erogatneva/qa-auto-engineer-javascript-project-44/blob/main/src/gifs/brain-gcd.gif)

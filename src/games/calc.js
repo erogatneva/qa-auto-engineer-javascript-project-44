@@ -21,6 +21,7 @@ const getRandomOperator = () => {
   return operator;
 };
 
+// TODO: rename method to 'calculate'
 const getAnswer = (firstOperand, secondOperand, operator) => {
   switch (operator) {
     case "+":
