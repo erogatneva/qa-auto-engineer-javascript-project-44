@@ -27,8 +27,6 @@ const printError = (expectedAnswer, userAnswer, name) => {
 };
 
 const processAnswer = (expectedAnswer, userAnswer, correctAnswers, name) => {
-(typeof userAnswer !== 'string') ? userAnswer = userAnswer.toString() : userAnswer;
-
   if (userAnswer === expectedAnswer.toString()) {
     printCorrect();
     return correctAnswers + 1;
@@ -37,4 +35,11 @@ const processAnswer = (expectedAnswer, userAnswer, correctAnswers, name) => {
   }
 };
 
-export { getUserName, sayHello, getRandomInt, printCorrect, printError, processAnswer };
+export {
+  getUserName,
+  sayHello,
+  getRandomInt,
+  printCorrect,
+  printError,
+  processAnswer,
+};
