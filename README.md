@@ -17,3 +17,7 @@
 ### How to install Brain Calc game:
 
 ![How to install Brain GCD game](https://github.com/erogatneva/qa-auto-engineer-javascript-project-44/blob/main/src/gifs/brain-gcd.gif)
+
+### How to install Brain Calc game:
+
+![How to install Brain GCD game](https://github.com/erogatneva/qa-auto-engineer-javascript-project-44/blob/main/src/gifs/brain-progression.gif)
