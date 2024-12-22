@@ -28,8 +28,8 @@ const getGCD = (first_num, second_num) => {
 };
 
 const generateQuestion = () => {
-  const first_num = getRandomInt(0, 100);
-  const second_num = getRandomInt(0, 100);
+  const first_num = getRandomInt(1, 100);
+  const second_num = getRandomInt(1, 100);
   const question = `Question: ${first_num} ${second_num}`;
 
   return { first_num, second_num, question };
