@@ -1,12 +1,12 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 const getUserName = () => {
-  let name = readlineSync.question("May I have your name? ");
+  const name = readlineSync.question('May I have your name? ');
   return name;
 };
 
 const sayHello = () => {
-  console.log("Welcome to the Brain Games!");
+  console.log('Welcome to the Brain Games!');
   console.log(`Hello, ${getUserName()}!`);
 };
 
@@ -17,12 +17,12 @@ const getRandomInt = (min = 0, max = 100) => {
 };
 
 const printCorrect = () => {
-  console.log("Correct!");
+  console.log('Correct!');
 };
 
 const printError = (expectedAnswer, userAnswer, name) => {
   console.log(
-    `'${userAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'.\nLet's try again, ${name}!`
+    `'${userAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'.\nLet's try again, ${name}!`,
   );
 };
 
@@ -30,9 +30,8 @@ const processAnswer = (expectedAnswer, userAnswer, correctAnswers, name) => {
   if (userAnswer === expectedAnswer.toString()) {
     printCorrect();
     return correctAnswers + 1;
-  } else {
-    return printError(expectedAnswer, userAnswer, name);
   }
+  return printError(expectedAnswer, userAnswer, name);
 };
 
 export {
