@@ -23,7 +23,7 @@ const generateProgression = (progressionLength = 10) => {
 };
 
 const generateQuestion = () => {
-  const progression = generateProgression(getRandomInt(3, 20)); // в прогрессии должно быть минимум 3 элемента, чтобы игрок мог понять шаг прогрессии
+  const progression = generateProgression(getRandomInt(5, 20)); // в прогрессии должно быть минимум 3 элемента, чтобы игрок мог понять шаг прогрессии
   const question = `Question: ${progression.progression}`;
   const expectedAnswer = progression.expectedAnswer;
 
