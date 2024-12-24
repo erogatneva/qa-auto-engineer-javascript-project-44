@@ -2,17 +2,20 @@ import readlineSync from 'readline-sync';
 import { getRandomInt, processAnswer } from '../index.js';
 
 function getGCD(firstNumber, secondNumber) {
+  let largerNumber = firstNumber;
+  let smallerNumber = secondNumber;
+
   // Пока одно из чисел не станет равно нулю
-  while (secondNumber !== 0) {
-    // Сохраняем значение второго числа
-    const temp = secondNumber;
-    // Вычисляем остаток от деления первого числа на второе
-    secondNumber = firstNumber % secondNumber;
-    // Первое число становится равным второму числу
-    firstNumber = temp;
+  while (smallerNumber !== 0) {
+    // Сохраняем значение меньшего числа
+    const remainder = largerNumber % smallerNumber;
+    // Обновляем большее и меньшее числа
+    largerNumber = smallerNumber;
+    smallerNumber = remainder;
   }
-  // Возвращаем первое число как НОД
-  return firstNumber;
+
+  // Возвращаем наибольший общий делитель
+  return largerNumber;
 }
 
 const generateQuestion = () => {
@@ -41,7 +44,9 @@ const gcdGame = (name) => {
     );
   }
 
-  correctAnswers === 3 ? console.log(`Congratulations, ${name}!`) : '';
+  if (correctAnswers === 3) {
+    console.log(`Congratulations, ${name}!`);
+  }
 };
 
 export default gcdGame;

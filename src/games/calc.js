@@ -55,7 +55,9 @@ const calcGame = (name) => {
     );
   }
 
-  correctAnswers === 3 ? console.log(`Congratulations, ${name}!`) : '';
+  if (correctAnswers === 3) {
+    console.log(`Congratulations, ${name}!`);
+  }
 };
 
 export default calcGame;

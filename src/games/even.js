@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { getRandomInt, processAnswer } from '../index.js';
 
-const isEven = (num) => (num % 2 === 0);
+const isEven = (num) => num % 2 === 0;
 const evenGame = (name) => {
   let correctAnswers = 0;
 
@@ -21,7 +21,9 @@ const evenGame = (name) => {
     );
   }
 
-  correctAnswers === 3 ? console.log(`Congratulations, ${name}!`) : '';
+  if (correctAnswers === 3) {
+    console.log(`Congratulations, ${name}!`);
+  }
 };
 
 export default evenGame;
