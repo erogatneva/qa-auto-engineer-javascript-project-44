@@ -39,7 +39,6 @@ const progressionGame = (name) => {
     console.log(question.question);
     let userAnswer = readlineSync.question("Your answer: ");
     let expectedAnswer = question.expectedAnswer;
-    // console.log(expectedAnswer);
 
     correctAnswers = processAnswer(
       expectedAnswer,
