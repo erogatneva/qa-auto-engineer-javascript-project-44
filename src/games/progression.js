@@ -11,10 +11,10 @@ const generateProgression = (progressionLength = 10) => {
 
   for (let i = 0; i < progressionLength; i++) {
     if (i === hideTermIndex) {
-      progression += " ..";
+      progression += ".. ";
       expectedAnswer = nextTerm;
     } else {
-      progression += ` ${nextTerm}`;
+      progression += `${nextTerm} `;
     }
     nextTerm += step;
   }
