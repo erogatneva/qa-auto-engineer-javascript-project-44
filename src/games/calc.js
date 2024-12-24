@@ -21,8 +21,7 @@ const getRandomOperator = () => {
   return operator;
 };
 
-// TODO: rename method to 'calculate'
-const getAnswer = (firstOperand, secondOperand, operator) => {
+const calculate = (firstOperand, secondOperand, operator) => {
   switch (operator) {
     case "+":
       return firstOperand + secondOperand;
@@ -41,7 +40,7 @@ const calcGame = (name) => {
     const question = generateQuestion();
     console.log(question.question);
     let userAnswer = readlineSync.question("Your answer: ");
-    let expectedAnswer = getAnswer(
+    let expectedAnswer = calculate(
       question.firstOperand,
       question.secondOperand,
       question.operator
